@@ -10,7 +10,7 @@ import java.nio.file.Files;
 
 /**
  * Simple application -- the XML to be converted and pretty-printed is read from a file,
- * but a precondition is exposed so that only small documents can be processed.
+ * but a precondition is imposed so that only small xml documents can be processed (for which the stack size is sufficient).
  * Therefore, the vulnerability cannot be exploited.
  * @author jens dietrich
  */
