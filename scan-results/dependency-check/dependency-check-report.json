@@ -4,16 +4,16 @@
     "engineVersion" : "8.2.1",
     "dataSource" : [ {
       "name" : "NVD CVE Checked",
-      "timestamp" : "2023-12-29T21:20:40"
+      "timestamp" : "2024-01-05T19:10:47"
     }, {
       "name" : "NVD CVE Modified",
-      "timestamp" : "2023-12-29T19:00:01"
+      "timestamp" : "2024-01-05T14:00:01"
     }, {
       "name" : "VersionCheckOn",
       "timestamp" : "2023-12-19T18:58:00"
     }, {
       "name" : "kev.checked",
-      "timestamp" : "1703808439"
+      "timestamp" : "1704435056"
     } ]
   },
   "projectInfo" : {
@@ -21,7 +21,7 @@
     "groupID" : "scabench",
     "artifactID" : "jsonorg-fp3",
     "version" : "1.0-SNAPSHOT",
-    "reportDate" : "2023-12-29T08:20:52.715863Z",
+    "reportDate" : "2024-01-05T06:23:15.045539Z",
     "credits" : {
       "NVD" : "This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
       "CISA" : "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",

@@ -1,12 +1,7 @@
 package scabench;
 
-
 import org.json.JSONObject;
 import org.json.XML;
-
-import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 
 /**
  * Simple application -- the XML to be converted and pretty-printed is read from a file,
@@ -16,10 +11,8 @@ import java.nio.file.Files;
  */
 public class XML2JSONConverter {
 
-    public static void main (String[] args) throws IOException {
-        File input = new File(args[0]);
-
-        String xml = Files.readString(input.toPath(), Charset.defaultCharset());
+    public static void main (String[] args) {
+        String xml = args[0];
         // simplified and ignoring closing tags (as they could be hidden in comments)
         long potentialMaxDepth = xml.chars().filter(c->c=='<').count();
         if (potentialMaxDepth<1000) {
@@ -30,6 +23,4 @@ public class XML2JSONConverter {
             throw new IllegalArgumentException("unsafe input");
         }
     }
-
-
 }

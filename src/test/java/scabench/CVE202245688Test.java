@@ -11,7 +11,7 @@ public class CVE202245688Test {
 
     @Test
     public void confirmVulnerability () throws Exception {
-        String input = CVE202245688Test.class.getResource("/dodgy.xml").getFile();
+        String input = "<a>".repeat(100_000);
         assertThrows(
             StackOverflowError.class,
             () -> XML2JSONConverter.main(new String[]{input})
